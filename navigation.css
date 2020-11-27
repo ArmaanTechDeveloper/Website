@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css?family=MuseoModerno');
+@import url('https://fonts.googleapis.com/css?family=::Bree+Serif');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --transitionnav:0.5s;
+    --navbackground:  rgb(37, 35, 35);
+    --whitetext: white;
+}
+.navigation{
+    display: flex;
+    background-color:  var(--navbackground);
+}
+.para{
+    width: 50%;
+    align-self: center;
+    font-family: 'bree serif';
+    font-size: 30px;
+    color: var(--whitetext);
+    padding-left: 10px;
+}
+.nav-list{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navigation li{
+    justify-content: right;
+    align-items: right;
+    list-style: none;
+    padding: 3px;
+    margin-right: 10px;
+}
+.navigation p{
+    color: var(--whitetext);
+}
+.navigation li a {
+    text-decoration: none;
+    color: var(--whitetext);
+    font-size: 20px;
+    display: flex;
+    justify-content: right;
+    padding: 6px;
+    font-family: 'museomoderno';
+    transition: var(--transitionnav);
+}
+.navigation li a:hover{
+    color:  #f2aa4cff;
+    transition: var(--transitionnav);
+}
