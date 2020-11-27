@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#contactbody h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'MuseoModerno';
+    text-decoration: underline;
+
+}
+#contactul li{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 2px;
+    list-style: disc;
+    font-family: 'Raleway';
+}
+
+
+
+
+
+
+@media only screen and (max-width:839px){
+   #contactul li{
+       font-size: 20px;
+       padding: 0;
+       /* margin: 0; */
+   }
+}
+
