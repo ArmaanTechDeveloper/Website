@@ -105,6 +105,60 @@ html{
 }
 
 /* Navigation bar ends here  */
+.container {
+  height: 100vh;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  font-family: 'Patrick Hand';
+  background-color: #f2aa4cff;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #000000;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+.container::before{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url('https://burst.shopifycdn.com/photos/developer-coding-in-php.jpg?width=1200&format=pjpg&exif=0&iptc=0') center center/cover;
+    width: 99vw;
+    height: 100vh;
+    background-attachment: fixed;
+    z-index: -1;
+    /* opacity: 0.7; */
+
+}
 
 /* body content starts here  */
 
@@ -113,7 +167,6 @@ html{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('https://burst.shopifycdn.com/photos/developer-coding-in-php.jpg?width=1200&format=pjpg&exif=0&iptc=0') no-repeat center/cover;
     /* background: url('imgflower.jpg'); */
     background-size: cover;
     background-attachment: fixed;
@@ -317,6 +370,9 @@ footer{
     .services{
         flex-direction: column;
     }
+    .container p{
+        font-size: 2rem;
+    }
   }
 
 
@@ -341,6 +397,9 @@ footer{
       }
       #body h1{
         font-size: 20px;
+    }
+    .container p{
+        font-size: 1.5rem;
     }
   }
   /* mobile view  */
@@ -372,3 +431,5 @@ footer{
 
 
 /* main .css ends here and the styling of main . html ends here Thanks for visiting the code  */
+
+
