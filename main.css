@@ -1,5 +1,4 @@
 /* Imports */
-
 /* Importing all the fonts which are used in this website and are all functional  */
 
 
@@ -33,84 +32,32 @@ html{
 }
 
 
-/* Navigation bar styling  */
 
- /* #navbar {
-    position: relative;
-    top: 0;
-    z-index: 1;
-    background: rgb(37, 35, 35);
-    margin: 10px 0;
-    border-radius: 30px;
-    
-}
 
-.navigation ul {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    margin-right: 20px;
-    
-}
 
-.navigation ul li {
-    list-style: none;
-    background: none;
-    padding: 5px 10px;
-    font-size: 20px;
-    font-family: "MuseoModerno";
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-}
 
-.navigation ul li a {
-    padding: 2px 10px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: white;
-    transition: 0.8s;
-}
 
-.navigation ul li a::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: white;
-    z-index: -1;
-    transition: 0.8s;
-}
 
-.navigation ul li a::before {
-    top: 0;
-    border-radius: 0 20% 20% 0;
-}
 
-.navigation ul li a:hover::before {
-    width: 180%;
-}
 
-.navigation ul li a:hover {
-    transition: 0.8s;
-    color: #000000;
-}
+
+
+
+
+
+
+
+
+/* Navigation bar designing  */
 
 .navigation span {
     text-align: right;
-}  */
-:root{
-    --transitionnav:0.5s;
-    --navbackground:  rgb(37, 35, 35);
-    --whitetext: white;
-}
+}  
+
 .navigation{
     position: sticky;
     display: flex;
-    background-color:  var(--navbackground);
+    background-color:   rgb(37, 35, 35);
     top: 0;
     left: 0;
 }
@@ -119,7 +66,7 @@ html{
     align-self: center;
     font-family: 'bree serif';
     font-size: 30px;
-    color: var(--whitetext);
+    color: white;
     padding-left: 10px;
 }
 .nav-list{
@@ -138,25 +85,39 @@ html{
     margin-right: 10px;
 }
 .navigation p{
-    color: var(--whitetext);
+    color: white;
 }
 .navigation li a {
     text-decoration: none;
-    color: var(--whitetext);
+    color: white;
     font-size: 20px;
     display: flex;
     justify-content: right;
     padding: 6px;
     font-family: 'museomoderno';
-    transition: var(--transitionnav);
+    transition: 0.8s;
 }
 .navigation li a:hover{
     color:  #f2aa4cff;
-    transition: var(--transitionnav);
+    transition: 0.8s;
 }
 
 /* Navigation bar ends here  */
-.container {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container {
   height: 100vh;
   /* background-color: black; */
   display: flex;
@@ -165,7 +126,7 @@ html{
   flex-direction: column;
   
 }
-.container p {
+#container p {
   font-size: 3rem;
   padding: 0.5rem;
   font-weight: bold;
@@ -176,18 +137,18 @@ html{
   font-family: 'Patrick Hand';
   background-color: #f2aa4cff;
 }
-.container p span.typed-text {
+#container p span.typed-text {
   font-weight: normal;
   color: #000000;
 }
-.container p span.cursor {
+#container p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
 }
-.container p span.cursor.typing {
+#container p span.cursor.typing {
   animation: none;
 }
 @keyframes blink {
@@ -197,7 +158,7 @@ html{
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
-.container::before{
+#container::before{
     content: '';
     top: 0;
     left: 0;
@@ -207,9 +168,27 @@ html{
     height: 100vh;
     background-attachment: fixed;
     z-index: -1;
-    /* opacity: 0.7; */
+    opacity: 0.950;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* body content starts here  */
 
@@ -240,31 +219,91 @@ html{
 
 
 #knowmore{
-    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1), -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
-    color: black;
-   background-color: #fff;
+   
+    color: white;
+    background-color: #007bff;
     padding: 10px 20px;
     margin: 30px 2px;
     font-size: 27px;
-    transition: 0.8s;
-    font-family: 'Raleway';
+    transition: 0.4s;
+    font-family: 'patrick hand';
     display: block;
     text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 10px;
 }
 #knowmore:hover{
     cursor: pointer;
-    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1), -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
-    color: red;
-    transition: 0.8s;
+    background-color: rgb(0, 98, 255);
+    transition: 0.4;
 }
-
+#button{
+    display: flex;
+}
+#studybtn{
+    color: white;
+    background-color: #43e21b;
+    padding: 10px 20px;
+    margin: 30px 2px;
+    font-size: 27px;
+    transition: 0.4s;
+    font-family: 'patrick hand';
+    display: block;
+    text-align: center;
+    border: 1px solid  #37971f;
+    border-radius: 10px;
+}
+#studybtn:hover{
+    cursor: pointer;
+    background-color: rgb(16, 192, 0);
+    transition: 0.4;
+}
+   #knowmore{
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin: 30px 2px;
+    font-size: 27px;
+    transition: 0.4s;
+    font-family: 'patrick hand';
+    display: block;
+    text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+}
+#knowmore:hover{
+    cursor: pointer;
+    background-color: rgb(0, 98, 255);
+    transition: 0.4;
+}
 /* know more button or a ends here  */
 
 /* main banner and body ends here  */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* about section starts here  */
 #aboutme{
     display: flex;
+    padding-top: 3%;
 }
 #photo img{
     width: 400px;
@@ -292,68 +331,20 @@ html{
 
 /* about section ends here  */
 
-/* list items hover effecs styling  */
 
-#lst{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-    position: relative;
-}
-#lstul{
-    position: relative;
-    margin-bottom: 30px;
-}
-#lstli{
-    position: relative;
-    left: 0;
-    list-style: none;
-    margin: 4px 0;
-    font-family: 'Raleway';
-    font-size: 30px;
-    border-left:2px solid rgb(0, 225, 255);
-    transition: 0.8s;
-    cursor: pointer;
-}
-#lstli:hover{
-    left: 10px;
-}
-#lstli::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 225, 255);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: 0.8s;
-}
-#lstli:hover::before{
-    transform: scaleX(1);
-}
-#lst a{
-    position: relative;
-    padding: 8px;
-    display: inline-block;
-    z-index: 1;
-    transition: 0.8s;
-    text-decoration: none;
-    color: black;
-}
-#lstli:hover a{
-    color: white;
 
-}
-#listings{
-    text-align: center;
-    font-size: 40px;
-    font-family: 'MuseoModerno';
-    text-decoration: underline;
-    margin-bottom: 20px;
-}
 
-/* Listing styling ends here  */
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* cards sectin starts here  */
@@ -367,13 +358,13 @@ html{
 
 .services h2 {
     font-family: 'MuseoModerno';
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size:40px;
     text-decoration: underline;
 }
 .services p{
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Patrick Hand';
 }
 
@@ -384,10 +375,11 @@ html{
 }
 
 .services .box {
-    /* border: 2px solid red; */
+    border-radius: 10px;
+    border: 2px solid rgb(195, 190, 190);
     padding: 20px;
     margin: 2px 8px;
-    background: rgb(37, 35, 35);
+    background: rgb(255, 252, 252);
 }
 
 .services .box img {
@@ -398,6 +390,24 @@ html{
 
 /* cards ends here  */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer designing  */
 
 footer{
@@ -406,9 +416,28 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 4px;
 }
 
 /* Footter ends here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media queries for responsiveness of main html  */
 
@@ -482,5 +511,3 @@ footer{
 
 
 /* main .css ends here and the styling of main . html ends here Thanks for visiting the code  */
-
-
