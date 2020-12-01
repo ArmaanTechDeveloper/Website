@@ -60,6 +60,7 @@ html{
     background-color:   rgb(37, 35, 35);
     top: 0;
     left: 0;
+ 
 }
 .para{
     width: 50%;
@@ -437,7 +438,19 @@ footer{
 
 
 
-
+.line{
+    width: 23px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
 
 /* media queries for responsiveness of main html  */
 
@@ -507,6 +520,54 @@ footer{
    .services .box img{
        height: 100px;
    }
+}
+
+/* navigation hamburger */
+
+
+@media only screen and (max-width:989px){
+    .nav-list{
+        width: 70%;
+    }
+ }
+ @media only screen and (max-width: 400px){
+     .para{
+         font-size: 16px;
+     }
+     .navigation li a{
+         font-size: 15px;
+     }
+ }
+@media only screen and (max-width: 853px){
+    .nav-list{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.1s ease-out;
+        height: 290px;
+    }
+    .para{
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger{
+        display: block;
+    }
+    .heightofnav{
+        height: 60px;
+    }
+    .visible{
+        opacity: 0;
+        transition: all 0.1s ease-out;
+    }
 }
 
 

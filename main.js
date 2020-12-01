@@ -1,4 +1,13 @@
+burger = document.querySelector('.burger')
+navbar = document.querySelector('.navigation')
+navList = document.querySelector('.nav-list')
+rightNav = document.querySelector('.para')
 
+burger.addEventListener('click',()=>{
+    rightNav.classList.toggle('visible');
+    navList.classList.toggle('visible');
+    navbar.classList.toggle('heightofnav');
+})
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");

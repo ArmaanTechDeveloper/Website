@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=MuseoModerno');
 @import url('https://fonts.googleapis.com/css?family=::Patrick+Hand');
-@import url('https://fonts.googleapis.com/css?family=::oxygen+mono');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,11 +21,13 @@
 }
 
 .schoolpara{
-    font-family: 'patrick hand';
+    font-family: 'Oxygen Mono';
     font-size: 28px;
     padding: 5px 0;
 }
-
+.schoolpara a{
+    font-size: 20px;
+}
 
   /* Big screen mobile view  */
 
