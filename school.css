@@ -26,12 +26,44 @@
 }
 
 
+  /* Big screen mobile view  */
 
-@media only screen and (max-width:839px){
-   #contactul li{
-       font-size: 20px;
-       padding: 0;
-       /* margin: 0; */
-   }
+  @media only screen and (max-width:797px){
+    .headingschool{
+        font-size: 37px;
+    }
+    .schoolpara{
+        font-size: 22px;
+    }
+  }
+  /* mobile view  */
+
+  @media only screen and (max-width:548px){
+    .headingschool{
+        font-size: 32px;
+    }
+    .schoolpara{
+        font-size: 18px;
+    }
 }
+
+/* small screen mobile view  */
+
+@media only screen and (max-width:481px){
+  .headingschool{
+      font-size: 25px;
+  }
+  .schoolpara{
+      font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:371px){
+    .headingschool{
+        font-size: 20px;
+    }
+    .schoolpara{
+        font-size: 14px;
+    }}
+  
 
