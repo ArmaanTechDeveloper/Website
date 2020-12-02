@@ -12,7 +12,7 @@ burger.addEventListener('click',()=>{
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Welcome to ArmaanTechDeveloper !", "You will find some amazing content here !", "A gamer , programmer , developer <3", "I am still learning stage , A student","Go Explore the Website :)"];
+const textArray = ["Welcome to ArmaanTechDeveloper !", "You will find some amazing content here !", "A gamer , programmer , developer <3", "I am still learning , A student","Go Explore the Website :)"];
 const typingDelay = 30;
 const erasingDelay = 30;
 const newTextDelay = 2000; // Delay between current and next text
