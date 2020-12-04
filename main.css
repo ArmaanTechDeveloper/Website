@@ -110,11 +110,12 @@ html{
 
 #container {
   height: 100vh;
-  /* background-color: black; */
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background-image: url('https://burst.shopifycdn.com/photos/developer-coding-in-php.jpg?width=1200&format=pjpg&exif=0&iptc=0') center center/cover; */
   
 }
 #container p {
@@ -149,7 +150,7 @@ html{
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
-#container::before{
+/* #container::before{
     content: '';
     top: 0;
     left: 0;
@@ -161,7 +162,7 @@ html{
     z-index: -1;
     opacity: 0.950;
 
-}
+} */
 
 
 
@@ -484,10 +485,19 @@ footer{
     .container p{
         font-size: 1.5rem;
     }
+    .typed-text{
+        font-size: 30px;
+    }
+    
   }
+  @media only screen and (max-width:548px){
+    .typed-text{
+        font-size: 25px;
+    }
+    }
   /* mobile view  */
 
-  @media only screen and (max-width:454px){
+  @media only screen and (max-width:468px){
     
     #body h1{
       font-size: 15px;
@@ -495,7 +505,11 @@ footer{
   #lstli{
       font-size: 20px;
   }
+  .typed-text{
+    font-size: 20px;
 }
+}
+
 
 /* small screen mobile view  */
 
@@ -509,6 +523,10 @@ footer{
    }
    .services .box img{
        height: 100px;
+   }
+   .box img{
+       width: 154px;
+       
    }
 }
 
@@ -557,6 +575,14 @@ footer{
     .visible{
         opacity: 0;
         transition: all 0.1s ease-out;
+    }
+}
+@media only screen and (max-width: 260px){
+    .box img{
+        width: 100px;
+    }
+    .box h2{
+        font-size: 20px;
     }
 }
 
