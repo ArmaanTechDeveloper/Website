@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* lets start the styling it is looking very awkward  */
+
+.studycs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.studyHeading{
+    font-size: 63px;
+    font-family: 'MuseoModerno';
+    margin: 4px 0px;
+    text-decoration: underline;
+}
+.studypara{
+    font-size: 20px;
+    font-family: 'oxygen mono';
+    margin: 0px 10px;
+    align-self: center;
+}
+.studyLi{
+    font-size: 20px;
+    font-family: 'oxygen mono';
+}
+.studycourses{
+    margin: 15px 0px;
+}
+.studyLi a {
+    font-size: 17px;
+    list-style: disc;
+}
+@media only screen and (max-width: 1243px){
+    .studypara{
+        font-size: 17px;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 1039px){
+    .studypara{
+        font-size: 13px;
+        margin: 0;
+    }
+    .studyHeading{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 972px){
+    .studyLi{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 776px){
+    .studyLi{
+        font-size: 10px;
+    }
+    .studypara{
+        font-size: 11px;
+    }
+    .studyHeading{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 549px){
+    .studyLi{
+        font-size: 6px;
+    }
+    .studypara{
+        font-size: 8px;
+    }
+    .studyHeading{
+        font-size: 20px;
+    }
+}

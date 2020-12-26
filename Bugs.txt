@@ -1,11 +1,22 @@
-Bugs reported will be fixing in updates :
+Todays Goal 
+Modifying Study computer science html page
 
-font family not working 
+Let me check once the live is going fine or not ?? 
+ok everything fine lets start
+Today we will modify the study cs section of our website 
+from total zero
 
-banner ka size
+started seeing our navigation bar done :)
+perfect right :)
+Just i am searching a tag to use in html i forgot it 
+oops i again forgot it lol
+looking so bad right ? lets design it 
+it is looking great now lets make it responsive
 
-Navigation bar ka armaan tech developer alag se dikhna chahiye
+it is looking great now lets make it more compact
 
-background is glictched
 
-cards mein school add karna hai (fixed)
+okay so it is almost done .... we will continue it tomorrow like this only 
+Time to close the stream Thanks for watching 
+It is almost completed
+let's close now bye bye
