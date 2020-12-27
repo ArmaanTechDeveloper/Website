@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 .schoolwork{
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,9 +24,7 @@
 .schoolpara a{
     font-size: 25px;
 }
-.schoolview{
-    height: 100vh;
-}
+
   /* Big screen mobile view  */
 
   @media only screen and (max-width:797px){
@@ -40,6 +37,10 @@
     .schoolpara a{
         font-size: 18px;
     }
+    .schoolview{
+        height: 100vh;
+    }
+    
   }
   /* mobile view  */
 
