@@ -11,14 +11,44 @@
     align-items: center;
     flex-direction: column;
 }
+.socialul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .socialList{
-    font-size: 20px;
     font-family: 'oxygen mono';
-    list-style: disc;
-    padding: 10px 0px;
+    list-style: none;
+    text-align: center;
+    margin-top: 40%;
+    padding: 10%;
 }
 #socialLink{
-    font-size: 17px;
+    font-size: 64px;
+    color: #000;
+    border-radius: 50%;
+    box-shadow: 0 20px 14px rgba(0,0,0,.5);
+}
+#socialLink .fab{
+    border-radius: 50%;
+    width: 150%;
+    height: 150%;
+    text-align: center;
+
+}
+.socialul li:nth-child(1) #socialLink:hover{
+    background-color: #E4405F;
+}
+.socialul li:nth-child(2) #socialLink:hover{
+    background-color: #0077b5;
+
+}
+.socialul li:nth-child(3) #socialLink:hover{
+    background-color: red;
+}
+ 
+.socialul li:nth-child(4) #socialLink:hover{
+    background-color: red;
 }
 @media only screen and (max-width: 575px){
     .socialEnroll{
@@ -28,7 +58,7 @@
         font-size: 17px;
     }
     #socialLink{
-        font-size: 15px;
+        font-size: 50px;
     }
 }
 @media only screen and (max-width: 411px){
@@ -39,7 +69,7 @@
         font-size: 13px;
     }
     #socialLink{
-        font-size: 10px;
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 279px){
@@ -50,6 +80,6 @@
         font-size: 10px;
     }
     #socialLink{
-        font-size: 8px;
+        font-size: 16px;
     }
 }
